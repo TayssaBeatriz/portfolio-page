@@ -1,0 +1,727 @@
+:root {
+    /* CORES */
+    --cor-de-fundo: #FFBFA4;
+    --cor-principal: #321D1C;
+    --cor-de-destaque: #FEF6D1;
+    --cor-de-contraste: #FFFFFF;
+    --cor-de-botao: #E22426;
+    /* FONTES */
+    --font-: Montserrat, sans-serif;
+    --font-weigth-titulo: 700;
+    --font-weigth-texto: 500;
+    --font-weigth-destaque: 700;
+    --fontzise-texto: 12px;
+    --fontsize-titulo: 18px;
+    --fontsize-subtitulo: 22px;
+    --fontsize-subtitulo2: 18px;
+    --fontsize-subtitulo3: 16px;
+    --font-text-color: rgb(65, 65, 65);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: var(--font-);
+    color: #321D1C;
+}button{
+    border: none;
+    background-color: transparent;
+    text-align: center;
+     color: var(--cor-de-contraste);
+}
+
+a{
+    background-color: var(--cor-de-botao);
+    border: none;
+    padding: 3% 10%;
+   
+    border-radius: 5px;
+    text-align: center;
+}
+
+p,
+li {
+    font-size: var(--fontsize-texto);
+    font-weight: var(--font-weigth-texto);
+}
+
+h1 {
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 30px;
+
+}
+
+h2 {
+    font-weight: var(--font-weigth-titulo);
+    font-size: var(--fontsize-titulo);
+}
+
+h3 {
+    font-size: var(--fontsize-subtitulo2);
+}
+
+h4 {
+    font-size: var(--fontsize-subtitulo3);
+    font-weight: 400;
+}
+
+#Hero_section {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--cor-principal);
+    padding: 0% 5% 0 5%;
+    background-image: var(--background-img);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+#Hero_section img {
+    width: 80%;
+    height: 50vh;
+
+}
+
+/* container para o texto */
+.container_HeroText {
+    display: grid;
+    width: 100%;
+    gap: 0rem;
+    min-height: 40vh;
+    color: var(--cor-de-destaque);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+
+
+}
+
+.container_HeroText .destaque {
+    background-color: var(--cor-de-destaque);
+    padding: 3%;
+    border-radius: 10px;
+    color: #321D1C;
+    text-align: center;
+}
+
+/* container para os dois botões  */
+.container_HeroButton a{
+    background-color: var(--cor-de-destaque);
+    border: none;
+    width: 100%;
+    padding: 3% 10%;
+    border-radius: 5px;
+    color: var(--cor-principal);
+    font-size: 11px;
+}
+.container_HeroButton button{
+    color: var(--font-text-color);
+}
+
+.container_HeroButton {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+
+}
+
+.description {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.description article {
+    width: 100%;
+}
+
+.description p {
+    color: var(--cor-de-fundo);
+}
+
+.description span {
+    color: var(--cor-de-destaque);
+}
+
+.Hero_card {
+    background-color: var(--cor-de-destaque);
+    padding: 5%;
+    border-radius: 5px;
+    text-align: left;
+    font-size: 12px;
+    position: static;
+    margin-top: 30vh;
+    display: grid;
+    gap: 0.6rem;
+    justify-content: center;
+    color: var(--font-text-color);
+
+
+
+
+}
+
+/* introdução */
+#introducao {
+    height: auto;
+}
+
+.containercards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: -5%;
+}
+
+.introducao_card {
+    display: flex;
+    gap: 0.6rem;
+    margin: 0% 10%;
+
+    padding: 10%;
+    /* gradiente  */
+    background: linear-gradient(35deg,
+            #3A1E1A 10%,
+            #7A4A3A 45%,
+            #FFBFA4 100%);
+    border-radius: 5px;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.25);
+
+    color: #ffffff;
+
+}
+
+.text {
+    display: grid;
+    gap: 1rem;
+}
+
+.icons i {
+    color: #3A1E1A;
+    font-size: 30px;
+    font-weight: 800;
+
+
+}
+
+.introducao_card h2 {
+    font-weight: 700;
+    font-size: 25px;
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 1);
+
+
+}
+
+.introducao_card h5 {
+    font-weight: 500;
+    font-size: 16px;
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 1);
+    margin: 0;
+
+}
+
+/*seção: introdução 2 */
+#introducao2 {
+    padding: 10%;
+    ;
+}
+
+.container_introducao2 {
+    display: grid;
+    gap: 1rem;
+
+}
+
+.container_introducao2 p {
+    font-weight: 600;
+    margin: auto;
+
+}
+
+.container_introducao2 button {
+    background-color: var(--cor-de-botao);
+    color: var(--cor-de-contraste);
+    padding: 3%;
+    border-radius: 5px;
+    border: none;
+}
+
+.container_introducao2 ul {
+   padding: 4%;
+   
+}
+.container_introducao2 li{
+    font-weight: 600;
+}
+
+/* seção: processo */
+.container_processo {
+    background-color: var(--cor-de-contraste);
+    width: 80%;
+    height: auto;
+    border: solid #7a4a3acf 15px;
+    padding: 5%;
+    border-radius: 5px;
+    margin: 0% 10%;
+    text-align: center;
+    display: grid;
+    gap: 0.8rem;
+
+
+}
+
+.processos_destaque {
+    background-color: var(--cor-de-destaque);
+    padding: 3%;
+}
+
+.container_jornada {
+    text-align: left;
+
+}
+
+/* seção:Modulos */
+#modulos {
+    text-align: center;
+    padding: 5%;
+
+}
+
+.container_Modulos {
+    background-color: var(--cor-principal);
+    width: 90vw;
+    border-radius: 10px;
+    padding: 5%;
+    color: var(--cor-de-contraste);
+    margin-bottom: 5%;
+
+}
+
+.container_cardsModulos {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 5% 0;
+    text-align: center;
+    justify-content: center;
+
+}
+
+.cardModulo {
+    display: grid;
+    gap: 1rem;
+    width: 100%;
+    padding: 10% 10%;
+    background: transparent;
+    color: var(--cor-de-contraste);
+    box-shadow: 0 0 0 0.2px #FFFFFF;
+    border-radius: 5px;
+    text-align: left;
+    background-color: #412420;
+
+}
+
+.cardModulo i {
+    font-size: 30px;
+}
+
+/* Seção:Etapas */
+#etapas {
+    justify-content: center;
+    text-align: center;
+    margin: 0 3%;
+
+}
+
+.container_etapas {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.card_etapas {
+    width: 90%;
+    height: auto;
+    margin: 5%;
+    background: linear-gradient(35deg,
+            #3A1E1A 10%,
+            #7A4A3A 45%,
+            #FFBFA4 100%);
+    border-radius: 5px;
+}
+
+.card_etapas ul {
+    padding: 0% 10% 5%;
+    color: var(--cor-de-contraste);
+    text-align: left;
+    
+}
+
+.card_etapas li {
+    line-height: 1.4rem;
+   
+}
+
+.card_etapas h3 {
+    margin-bottom: 3%;
+}
+
+.card_interno {
+    border-radius: 5px 5px 0px 0px;
+    width: 100%;
+
+    padding: 5%;
+    background-color: var(--cor-de-contraste);
+    border: 1px solid #321D1C;
+    font-weight: 500;
+    color: rgb(102, 101, 101);
+    align-items: center;
+    text-align: left;
+
+}
+
+.resultado {
+    padding: 3%;
+    background-color: var(--cor-de-contraste);
+    margin: 3%;
+    border-radius: 5px;
+    border-left: 7px solid #321D1C;
+
+}
+
+/* seção:por que funciona */
+.card_pqFunciona {
+    margin: 5%;
+    padding: 5%;
+    border-radius: 5px;
+    border: 1px solid #321D1C;
+    background-color: var(--cor-de-destaque);
+    text-align: center;
+    display: grid;
+    gap: 1rem;
+    color: rgb(65, 65, 65);
+}
+
+/* Seção: bônus */
+#bonus {
+    text-align: center;
+    display: grid;
+    gap: 1rem;
+    color: var(--font-text-color);
+    padding: 5%;
+}
+
+.container_bonusCard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 3% 0 10% 0;
+}
+
+.cardBonus {
+    text-align: left;
+    padding: 10%;
+
+    background-color: var(--cor-de-destaque);
+    border-radius: 5px;
+    border: 1px solid #321D1C;
+    display: grid;
+    gap: 1rem;
+    color: rgb(65, 65, 65);
+    justify-content: center;
+}
+
+.cardBonus span {
+    background-color: #3A1E1A;
+    padding: 3%;
+    color: var(--cor-de-contraste);
+}
+
+.cardBonus p {
+    margin: 0;
+}
+
+.cardInfo {
+    background-color: #7a4a3aa8;
+    padding: 5%;
+    margin: 5%;
+    border-radius: 5px;
+    border: 1px solid #321D1C;
+    color: #321D1C;
+
+}
+
+/* seção:Apresentação das mentoras */
+#mentoras {
+    background-color: var(--cor-de-destaque);
+    text-align: center;
+    display: grid;
+    gap: 2rem;
+}
+
+#mentoras span {
+    background-color: #9b6857f0;
+    padding: 3%;
+    border-radius: 5px;
+    border: 1px solid #321D1C;
+}
+
+.mentora1 {
+    background-color: var(--cor-de-destaque);
+    color: var(--cor-principal);
+    display: flex;
+    margin-top: 5%;
+
+
+}
+
+.mentora1 img {
+    width: 55%;
+    height: 50vh;
+}
+
+.mentora2 img {
+    width: 60%;
+    height: 60vh;
+    margin-top: -20%;
+    justify-content: center;
+}
+
+.mentora2 {
+    display: flex;
+    background-color: var(--cor-principal);
+    color: var(--cor-de-destaque);
+}
+
+.containerMentoria h6 {
+    font-size: 10px;
+    color: #e4456d;
+    margin: 0 5%;
+
+}
+
+.containerMentoria h5 {
+    color: rgb(65, 65, 65);
+}
+
+.descricao {
+    font-size: 11px;
+    margin: 10% 8% 0 8%;
+    justify-content: center;
+
+
+}
+
+.descricao ul {
+    list-style-type: none;
+    display: grid;
+    gap: 0.4rem;
+    margin-top: 5%;
+}
+
+.descricao li {
+    font-size: 11px;
+    text-align: left;
+
+}
+
+.descricao i {
+    margin-right: 5%;
+}
+
+.descricao h2 {
+    margin-bottom: 8%;
+}
+
+/* Seção:relatos */
+#relatos button {
+    margin-top: -5%;
+    margin-bottom: 3%;
+}
+
+#relatos {
+    background-color: var(--cor-de-contraste);
+    height: auto;
+    text-align: center;
+    padding: 0 5%;
+
+}
+
+#relatos h5 {
+    font-size: 11px;
+    margin-bottom: 5%;
+
+}
+
+.containerComentarios {
+    max-height: 80vh;
+    overflow-x: auto;
+    scrollbar-width: auto;
+}
+
+.carrossel {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 0 0 3% 0;
+
+
+}
+
+.Card_comentario {
+    text-align: left;
+    padding: 3%;
+    box-shadow: 1px 1px 3px 0.2px gray;
+    font-size: 11px;
+    display: grid;
+    gap: 1rem;
+    margin: 0 5%;
+    border-radius: 5px;
+}
+
+.containerStar i {
+    color: goldenrod;
+    font-size: 12px;
+}
+
+.containerUser {
+    width: 100%;
+    display: flex;
+    gap: 0.6rem;
+   
+}
+.containerUser img{
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+}
+
+
+/* seção:preço */
+#preco {
+    text-align: center;
+    padding: 3%;
+
+}
+
+.cardPreco span {
+    background-color: var(--cor-principal);
+    color: var(--cor-de-destaque);
+    padding: 2%;
+    border-radius: 5px;
+}
+
+.cardPreco {
+    display: grid;
+    gap: 0.6rem;
+    background-color: #7a4a3ab8;
+    margin: 3% 3% 0 3%;
+    padding: 6% 3%;
+    border-radius: 5px 5px 0 0;
+    border: 1px solid #321D1C;
+    color: var(--cor-principal);
+}
+
+.cardPreco h2 {
+    font-size: 50px;
+    font-family: var(--font-);
+    font-weight: 500;
+
+}
+
+.descricao_preco {
+    background-color: var(--cor-de-destaque);
+    padding: 3% 13% 8% 13%;
+    margin: 0% 3%;
+    border-radius: 0 0px 5px 5px;
+    border: 1px solid #321D1C;
+    display: grid;
+    gap: 1rem;
+}
+
+.descricao_preco ul {
+    list-style-type: none;
+    list-style-image: url('../img/check-mark.png');
+    padding: 6%;
+
+}
+
+.descricao_preco li {
+    margin-bottom: 7%;
+}
+
+.minCards {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+
+}
+
+.minCards i {
+    color: var(--cor-principal);
+    text-align: justify;
+    font-size: 16px;
+    margin-right: 3%;
+}
+
+.minCards article {
+    padding: 3% 5%;
+    background-color: #7a4a3ab8;
+    border-radius: 3px;
+    color: var(--cor-de-contraste);
+    font-size: 10px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.minCards article,
+li::before {
+    list-style-type: none;
+    list-style-image: url('../img/cherry-blossom.png');
+
+
+}
+
+/* seção:final */
+#final{
+    justify-content: center;
+}
+#final article {
+    background-color: #7a4a3aa8;
+    padding: 5%;
+    margin: 5%;
+    border-radius: 5px;
+    text-align: center;
+    display: grid;
+    gap: 0.6rem;
+    justify-content: center;
+    box-shadow: 0 0 0 0.5px #321D1C;
+}
+.containerLogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.containerLogo img{
+    width: 50%;
+    height: auto;
+}

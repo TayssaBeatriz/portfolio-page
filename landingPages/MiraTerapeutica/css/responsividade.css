@@ -1,0 +1,378 @@
+/* Smartphone */
+@media (max-width: 450px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    /* SEÇÃO: HERO SECTION */
+    #Hero_section {
+        background-position: top;
+    }
+
+    /* SEÇÃO:MENTORIA */
+    .mentora1 img {
+        width: 55%;
+        height: auto;
+
+    }
+
+    .mentora2 img {
+        width: 55%;
+        height: auto;
+
+    }
+
+    .descricao li {
+        font-size: 12px;
+    }
+
+    .descricao {
+        margin: 10% 5% 0 5%;
+    }
+
+}
+
+
+/* tablet */
+@media (min-width:768px)and (max-width:1024px) {
+
+    :root {
+
+        /* FONTES */
+        --fontsize-texto: 22px;
+        --fontsize-titulo: 32px;
+        --fontsize-subtitulo: 28px;
+        --fontsize-subtitulo2: 18px;
+        --fontsize-subtitulo3: 16px;
+        --font-text-color: rgb(65, 65, 65);
+
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+
+    p,
+    li {
+        font-size: var(--fontsize-texto);
+        font-weight: var(--font-weigth-texto);
+    }
+
+    h2 {
+        font-weight: var(--font-weigth-titulo);
+        font-size: var(--fontsize-titulo);
+    }
+
+    h3 {
+        font-size: var(--fontsize-subtitulo2);
+    }
+
+    h4,
+    h5 {
+        font-size: var(--fontsize-subtitulo2);
+    }
+
+    /* SEÇÃO: Hero section */
+    #Hero_section {
+        background-image: url('../img/tabletBanner02.png');
+        background-position: center;
+        padding: 2% 5%;
+    }
+
+    .description {
+        gap: 0rem;
+        justify-content: space-around;
+
+    }
+
+    /* SEÇÃO:I introdução */
+    .introducao_card h2 {
+        font-size: 38px;
+    }
+
+    .introducao_card h5 {
+        font-size: 18px;
+    }
+
+    .icons i {
+        font-size: 40px;
+    }
+
+    /* SEÇÃO: módulos */
+    .cardModulo i {
+        font-size: 40px;
+    }
+
+    /* SEÇÃO: mentoria */
+    .containerMentoria {
+        margin-top: 5%;
+    }
+
+    .mentora1 img,
+    .mentora2 img {
+        width: 40%;
+        height: auto;
+
+    }
+
+    .descricao li {
+        font-size: var(--fontsize-subtitulo3);
+    }
+
+    /* SEÇÃO: bônus */
+    .cardBonus {
+        gap: 3rem;
+    }
+
+    /* SEÇÃO: preço */
+    .cardPreco {
+        gap: 2rem;
+    }
+
+    /* SEÇÃO: etapas */
+    .card_etapas li {
+        line-height: 2rem;
+    }
+
+    /* SEÇÃO:comentários */
+   .containerUser img{
+    width: 55px;
+    height: 55px;
+    border-radius: 100px;
+}
+
+}
+
+/* ///////////// Ajuste na imagem do hero section no tamanho (540px) */
+@media (width:540px) {
+    #Hero_section {
+        background-image: var('url(../img/mobile02.png)');
+        background-position: center;
+    }
+}
+
+/* desktop */
+@media (orientation: landscape) {
+    :root {
+        --fontsize-texto: 20px;
+        --fontsize-titulo: 36px;
+        --fontsize-subtitulo: 36px;
+        --fontsize-subtitulo2: 28px;
+        --fontsize-subtitulo3: 22px;
+
+    }
+
+    li {
+        font-size: var(--fontsize-subtitulo3);
+    }
+
+    p {
+        font-size: var(--fontsize-texto);
+    }
+
+    h1 {
+        font-size: 50px;
+
+    }
+    button{
+        font-size: var(--fontsize-subtitulo);
+    }
+
+    a {
+        font-size: 20px;
+        width: 100%;
+    }
+
+    h5 {
+        font-size: var(--fontsize-subtitulo3);
+    }
+
+    /* SEÇÃO: Hero section */
+    #Hero_section {
+        background-image: url('../img/Desktop 1.png');
+        background-size: cover;
+        background-position: top;
+        padding: 3% 5%;
+    }
+
+    .text h2 {
+        font-size: 25px;
+    }
+
+    .Hero_card {
+        margin-top: 3%;
+        padding: 2%;
+    }
+
+    .container_HeroText {
+        width: 60%;
+        gap: 2rem;
+        text-align: left;
+    }
+
+    .description {
+        gap: 2rem;
+    }
+
+    .description article p {
+
+        font-size: 16px;
+    }
+    .container_HeroButton button{
+        font-size: var(--fontsize-texto);
+    }
+
+    /* SEÇÃO: introdução */
+    .containercards {
+        flex-direction: row;
+        margin: -2% 3%;
+    }
+
+    .container_cardsModulos {
+        flex-direction: row;
+
+    }
+
+    .cardModulo {
+        padding: 0;
+        width: 45%;
+        padding: 3%;
+    }
+
+    .introducao_card {
+        width: 25%;
+        gap: 0;
+        padding: 2%;
+        margin: 0;
+
+    }
+
+    .container_introducao2 {
+        gap: 2rem;
+    }
+
+    .icons i {
+        font-size: 25px;
+    }
+    /* SEÇÃO: etapas */
+   
+
+    /* SEÇÃO: mentoria */
+    #mentoras {
+        gap: 4rem;
+    }
+
+    .mentora1 img {
+        width: 40%;
+        height: auto;
+
+    }
+
+    .containerMentoria p,
+    h6 {
+        font-size: 16px;
+    }
+
+    .containerMentoria p {
+        font-size: 16px;
+    }
+
+
+    .mentora2 img {
+        margin-top: -20%;
+        width: 60%;
+        height: auto;
+
+    }
+
+    .descricao {
+        margin: 5% 4% 0 4%;
+    }
+
+    .descricao li,
+    .descricao_preco li {
+        font-size: 27px;
+    }
+
+    /* SEÇÃO: etapas */
+    .container_etapas {
+        flex-direction: row;
+        gap: 2rem;
+        margin: 3% 0%;
+        justify-content: center;
+
+
+    }
+
+    .card_etapas {
+        margin: 0;
+        max-width: 40%;
+       
+
+    }
+    .card_etapas li{
+        line-height: 2rem;
+    }
+
+    /* SEÇÃO: bônus */
+    .container_bonusCard {
+        flex-direction: row;
+        justify-content: center;
+        padding: 3% 0 0 0;
+    }
+
+    .cardBonus {
+        width: 45%;
+        padding: 3%;
+        gap: 1rem;
+    }
+
+    /* SEÇÃO: relatos */
+    .carrossel {
+        flex-direction: row;
+        height: auto;
+        gap: 1rem;
+        padding: 0;
+        justify-content: center;
+    }
+
+    #relatos button {
+        margin-top: -20%;
+
+    }
+
+    #relatos {
+        padding: 0 5% 5% 5%;
+    }
+
+    .containerComentarios {
+        height: auto;
+        scrollbar-width: none;
+    }
+
+    .Card_comentario {
+        width: 28%;
+        margin: 0;
+
+    }
+
+    .Card_comentario p {
+        font-size: 11px;
+    }
+
+    .containerUser img{
+    width: 45px;
+    height: 45px;
+    border-radius: 100px;
+}
+
+    /* SEÇÃO: Preço */
+    .cardPreco {
+        gap: 2rem;
+    }
+    /* SEÇÃO: final */
+    .containerLogo img{
+    width: 30%;
+    height: auto;
+}
+}

@@ -1,0 +1,728 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #080A16;
+    text-align: center;
+    color: white;
+    font-family: "Alumni Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: var(--font-size-titulo);
+}
+
+:root {
+    --cor-fundo: #080A16;
+    --cor-destaque: #FACC2E;
+    --cor-secundaria: #2e2e38;
+    --fonte-titulo: "Passion One", sans-serif;
+    --fonte-texto: "Alumni Sans", sans-serif;
+    --font-size-hero: 28px;
+    --font-size-titulo: 22px;
+    --font-size-subTitulo: 18px;
+    --font-size-texto: 14px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-family: var(--fonte-titulo);
+    font-size: var(--font-size-hero);
+}
+
+p {
+    font-size: var(--font-size-texto);
+
+}
+
+h2 {
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    font-size: var(--font-size-titulo);
+
+}
+
+h3 {
+    color: var(--cor-destaque);
+    font-family: var(--fonte-titulo);
+    font-size: var(--font-size-titulo);
+}
+
+h4 {
+    font-size: var(--font-size-subTitulo);
+}
+
+span {
+    color: var(--cor-destaque);
+}
+
+ul {
+    font-size: var(--font-size-texto);
+}
+
+button {
+    width: 100%;
+    background-color: var(--cor-destaque);
+    color: black;
+    border: none;
+    border-radius: 10px;
+    height: 5vh;
+    font-family: "Alumni Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    border-bottom: 8px solid #89783f;
+    font-size: 20px;
+
+}
+
+button:active {
+    border: none;
+    color: white;
+}
+section{
+    width: 100%;
+   
+    height: auto;
+}
+
+/* hHERO SECTION */
+#HeroSection {
+    height: 100vh;
+    background-image: var(--background);
+    background-position: 25%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.containerHeroButton {
+    height: max-content;
+
+}
+
+.containerHeroButton ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    margin: auto;
+    justify-content: space-between;
+
+}
+
+.containerHeroButton ul li::before {
+    content: '\2737';
+    color: #FACC2E;
+
+}
+
+.containerHeroButton ul li {
+    padding: 3%;
+}
+
+.containerHeader {
+    height: 100%;
+    padding: 5%;
+    justify-content: center;
+    display: grid;
+    align-items: center;
+    gap: 24rem;
+
+
+
+
+}
+
+#HeroSection p {
+    color: white;
+}
+
+
+/*  SEÇÃO TREINAMENTO */
+#treinamento {
+    padding: 10% 0;
+    height: auto;
+    display: grid;
+    gap: 2em;
+}
+.containerTxtTreinamento {
+    padding: 5%;
+}
+.containerCarrossel {
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.carrossel {
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    display: flex;
+    animation: spin 8s infinite linear;
+    padding-right: 1em;
+
+}
+
+
+.item {
+    background-color: rgb(1, 1, 32);
+    width: 40vw;
+    height: 20vh;
+    border-radius: 10px;
+    object-fit: cover;
+
+
+
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+
+}
+
+@keyframes spin {
+    from {
+        translate: 0;
+    }
+
+    to {
+        translate: -100%;
+    }
+}
+
+/* seção pra quem */
+#praquem {
+    align-items: center;
+     background: radial-gradient(
+    ellipse at center,
+    #15183ce3 5%,
+    #070816 45%,
+    #080A16 100%
+  );
+   
+}
+
+.containerParaQuem {
+    height: auto;
+    opacity: 1;
+    display: grid;
+    gap: 1rem;
+    justify-content: center;
+    padding: 5%;
+    margin: 10%;
+    align-items: center;
+
+
+}
+
+.containerParaQuem ul {
+    list-style-type: none;
+    text-align: justify;
+}
+
+.containerParaQuem li::before {
+    content: '\2735';
+    color: var(--cor-destaque);
+    width: 70%;
+    font-family: "Alumni Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 25px;
+    padding-right: 3%;
+}
+
+/* SEÇÃO MODULOS */
+.containerModulos {
+    margin: 5%;
+    padding: 3%;
+    display: grid;
+}
+
+/* GRID dos cards */
+
+.containerCards {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5% 0;
+    gap: 0.8rem;
+}
+/* Cada card individual */
+.card {
+    background-color: var(--cor-secundaria);
+    border-radius: 10px;
+    width: 40%;
+    padding: 3%;
+    height: max-content;
+    color: white;
+    justify-content: center;
+    display: grid;
+    gap: 1rem;
+    text-align: left;
+}
+.card i {
+    color: var(--cor-destaque);
+    font-size: 30px;
+
+}
+
+/* SEÇÃO PREÇO */
+#preco {
+ background: radial-gradient(circle at center, #172047, #080916, #080A16); 
+}
+#underline {
+    text-decoration: underline;
+}
+#importante {
+    font-size: 25px;
+}
+
+.containerPreco {
+    height: auto;
+    display: grid;
+    gap: 0.7rem;
+    margin: 5%;
+    padding: 10% 3%;
+    justify-content: center;
+
+}
+
+.preco {
+
+    color: var(--cor-destaque);
+    font-family: "Passion One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+
+}
+
+/* SEÇÃO DEPOIMENTOS */
+#depoimentos button {
+    width: 100%;
+}
+#depoimentos h3 {
+    padding: 5% 3%;
+}
+.containerInfor {
+    font-size: 12px;
+    background-color: grey;
+    padding: 8% 7%;
+    border-radius: 10px;
+}
+.containerStar {
+    font-size: 20px;
+}
+.containerComments {
+    height: 80vh;
+    overflow-x: auto;
+    scrollbar-width: auto;
+}
+.carrosselComments {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3% 5%;
+    gap: 0.5rem;
+}
+.cardComment {
+    background-color: #2e2e38;
+    text-align: left;
+    padding: 5%;
+    font-size: 11px;
+    display: grid;
+    gap: 1rem;
+    border-radius: 5px;
+}
+.containerUser {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.containerUser img {
+    width: 40px;
+    height: 40px;
+    background: #FACC2E;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 100px;
+    margin: 3%;
+}
+/* SEÇÃO CERTIFICADO */
+#certificado {
+    padding: 5%;
+    margin: 10% 0;
+    justify-content: center;
+    display: grid;
+    gap: 1rem;
+}
+.containerCerti {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+.containerCerti img {
+    width: 80%;
+    height: auto;
+    margin: 3%;
+}
+/* SEÇÃO BONUS */
+#bonus {
+    padding: 5%;
+    min-height: 100vh;
+    margin-bottom: 10%;
+    display: grid;
+    gap: 0.8rem;
+}
+.containerBonus {
+    display: flex;
+    flex-wrap: wrap;
+}
+.bonusBox {
+    background-color: var(--cor-secundaria);
+    display: grid;
+    gap: 1rem;
+    width: 70%;
+    padding: 5%;
+    height: auto;
+    position: relative;
+    border-radius: 10px;
+    margin-bottom: 3%;
+    margin-left: 15%;
+    justify-content: center;
+}
+.bonusBox img {
+    z-index: 2;
+    width: 70px;
+    height: auto;
+    margin: auto;
+}
+/* SEÇÃO SOBRE MIM */
+#sobreMim {
+    background-image: var(--background);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+.containerSobre {
+    height: auto;
+    padding: 5%;
+    margin: 3%;
+    text-align: justify;
+}
+#sobreMim img {
+    width: 75%;
+    height: auto;
+    margin: auto;
+}
+/* SEÇÃO FAQ */
+#faq {
+    height: max-content;
+    padding: 3%;
+    margin: 10% 0%;
+}
+.containerFaq {
+    display: grid;
+    margin: 5%;
+    gap: 0.6rem;
+    height: max-content;
+}
+.answerFaq {
+    width: 100%;
+    height: 60px;
+    background-color: var(--cor-secundaria);
+    position: relative;
+    border-radius: 10px;
+}
+
+.text {
+    display: none;
+    position: absolute;
+    bottom: 10%;
+    margin-left: 5%;
+    z-index: 1;
+
+}
+
+.questFaq {
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    height: 60px;
+    background-color: var(--cor-secundaria);
+    z-index: 2;
+    border-radius: 10px;
+    justify-content: center;
+    padding: 5%;
+}
+
+.questFaq:hover {
+    background-color: var(--cor-destaque);
+}
+
+
+/* SEÇÃO FOOTER */
+.containerFooter {
+    padding: 5%;
+    margin: 3%;
+    display: grid;
+    gap: 1rem;
+    justify-content: center;
+}
+.containerFooter img {
+    width: 100%;
+    margin: auto;
+}
+
+/* RESPONSIVIDADE*/
+/* Tablet */
+@media(min-width:763px) and (max-width:1024px) {
+
+    :root {
+        --cor-fundo: #080A16;
+        --cor-destaque: #FACC2E;
+        --cor-secundaria: #2e2e38;
+        --fonte-titulo: "Passion One", sans-serif;
+        --fonte-texto: "Alumni Sans", sans-serif;
+        --font-size-hero: 45px;
+        --font-size-titulo: 30px;
+        --font-size-subTitulo: 22px;
+        --font-size-texto: 18px;
+    }
+
+    h2 {
+        font-size: 35px;
+    }
+
+    button {
+       
+        font-size: 40px;
+    }
+
+    .containerHeader {
+        gap: 450px;
+    }
+
+    .containerHeroButton ul {
+        font-size: var(--font-size-subTitulo);
+        margin: 0 auto;
+    }
+
+    .containerHeader article {
+        text-align: center;
+        margin: 0;
+    }
+
+    .item {
+
+        width: 30vw;
+        height: 20vh;
+        object-fit: cover;
+
+    }
+
+    .containerParaQuem {
+        margin: 5%;
+    }
+
+    video {
+        width: 70%;
+
+    }
+
+    .bonusBox {
+        padding: 10%;
+    }
+
+    .containerFaq {
+        gap: 0.8rem;
+
+    }
+
+    .questFaq {
+        padding: 3%;
+    }
+
+    .itemcoments {
+        text-align: center;
+        width: 50%;
+        height: auto;
+        background-color: var(--cor-secundaria);
+        border-radius: 10px;
+    }
+
+    .containerComments {
+        height: 50vh;
+    }
+
+    .carrosselComments {
+        padding: 0 3%;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+
+    .cardComment {
+        width: 40%;
+        padding: 8%;
+    }
+
+    .containerImg {
+        background: #FACC2E;
+        width: 60px;
+        height: 60px;
+        border-radius: 100px;
+        margin: 3%;
+        overflow: hidden;
+
+    }
+
+    .containerPreco {
+        padding: 5% 3%;
+        gap: 3rem;
+    }
+    #sobreMim{
+        flex-direction: row;
+    }
+    
+    #sobreMim img {
+        width: 30%;
+
+    }
+    .containerFooter img{
+        width: 50%;
+        height: auto;
+    }
+
+}
+/* Desktop */
+@media(orientation: landscape) {
+
+    :root {
+        --cor-fundo: #080A16;
+        --cor-destaque: #FACC2E;
+        --cor-secundaria: #2e2e38;
+        --fonte-titulo: "Passion One", sans-serif;
+        --fonte-texto: "Alumni Sans", sans-serif;
+        --font-size-hero: 45px;
+        --font-size-titulo: 38px;
+        --font-size-subTitulo: 25px;
+        --font-size-texto: 22px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+    button{
+        width: 90%;
+        margin: auto;
+       height: 8vh;
+       font-size: 25px; 
+    }
+    .containerHeader {
+        width: 50%;
+        height: auto;
+        gap: 2rem;
+        margin: auto 50%;
+    }
+    .containerHeader button{
+        width: 100%;
+    }
+    .containerText {
+        display: grid;
+        gap: 1rem;
+    }
+
+    #treinamento {
+        padding: 5% 0;
+    }
+
+    .carrossel {
+        gap: 2rem;
+    }
+
+    .item {
+        width: 30vw;
+    }
+
+    .item {
+        width: 20vw;
+        height: 35vh;
+        object-fit: cover;
+
+    }
+
+    .containerParaQuem {
+        margin: 3%;
+        padding: 3%;
+    }
+
+    #modulos p {
+        font-size: 16px;
+    }
+
+    .containerComments {
+        height: auto;
+    }
+
+    .carrosselComments {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .cardComment {
+        width: 30%;
+        padding: 3% 5%;
+    }
+
+    #sobreMim {
+        flex-direction: row;
+    
+    }
+
+    #sobreMim img {
+        width: 50%;
+
+    }
+    .containerSobre{
+        width: 70%;
+    }
+    #certificado{
+        margin: 0 auto;
+
+    }
+    .containerCerti img {
+        width: 60%;
+        height: auto;
+
+    }
+
+    .containerPreco {
+        padding: 3%;
+        gap: 2rem;
+    }
+    #faq{
+        margin: 0;
+    }
+    .questFaq{
+        padding: 2% 3%;
+    }
+    .containerFooter img{
+        width: 30%;
+        height: auto;
+    }
+
+}
