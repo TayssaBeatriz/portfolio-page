@@ -128,6 +128,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     position: relative;
     width: 80vw;
     min-height: 70vh;
+    gap: 1rem;
     border-radius: 20px;
     margin: 0 auto;
     padding: 20px 10px;
@@ -254,7 +255,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 
 }
 .name img{
-        width: 90px;
+    width: 85px;
 }
 
 .category {
@@ -284,7 +285,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 
 .descriptionProj {
     display: grid;
-    gap: 2rem;
+    gap: 1.5rem;
     position: absolute;
     overflow: hidden;
     z-index: 1;
@@ -299,6 +300,8 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(4.2px);
     -webkit-backdrop-filter: blur(4.2px);
+    height: auto;
+    
 
 }
 
@@ -341,6 +344,7 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 .tecnologies {
     display: flex;
     gap: 0.5rem;
+    height: auto;
 }
 
 .tech {
@@ -517,10 +521,6 @@ footer ul{
     }
     main{
         margin-top:-55px;
-    }
-    .banner{
-        min-width: 40vw;
-        
     }
 
     .descricao{
