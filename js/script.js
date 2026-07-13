@@ -36,7 +36,7 @@ projects.forEach(pj=>{
           <img src="${pj.img}" alt="">
         </div>
         <div class="descriptionProj">
-        <div class="top"></div>
+        
         <div class="margin">
           <div class="text">
             <h3>${pj.name}</h3>
@@ -79,31 +79,30 @@ btnVoltar.addEventListener('click',()=>{
 });
 
 
-
 const banners = containerprojects.querySelectorAll('.banner');
+
 banners.forEach((banner) => {
     banner.addEventListener('click', () => {
 
-        const cardAtual = banner.closest('.card-project');
-        const descriptionAtual = cardAtual.querySelector('.descriptionProj');
-        const textAtual = cardAtual.querySelector('.margin');
+        const card = banner.closest('.card-project');
+        const text = card.querySelector('.margin');
 
-        const estavaAberto = descriptionAtual.classList.contains('open');
+        const cardAberto = card.classList.contains('open');
 
         // Fecha todos os cards
-        document.querySelectorAll('.card-project').forEach((card) => {
-            card.querySelector('.descriptionProj').classList.remove('open');
-            card.querySelector('.descriptionProj').style.height = '25vh';
-            card.querySelector('.margin').style.display = 'none';
-            card.style.gridRow = 'span 1';
+        document.querySelectorAll('.card-project').forEach((c) => {
+            c.classList.remove('open');
+            c.querySelector('.descriptionProj').style.height = '0';
+            c.querySelector('.margin').style.display = 'none';
+            c.style.gridRow = 'span 1';
         });
 
         // Se o card clicado estava fechado, abre ele
-        if (!estavaAberto) {
-            descriptionAtual.classList.add('open');
-            descriptionAtual.style.height = 'max-content';
-            textAtual.style.display = 'grid';
-            cardAtual.style.gridRow = 'span 2';
+        if (!cardAberto) {
+            card.classList.add('open');
+            card.querySelector('.descriptionProj').style.height = 'auto';
+            text.style.display = 'grid';
+            card.style.gridRow = 'span 2';
         }
 
     });
