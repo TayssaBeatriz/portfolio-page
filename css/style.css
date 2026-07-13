@@ -314,7 +314,8 @@ main {
 }
 
 .containerProjects {
-
+    margin: 0 auto;
+    width: 85%;
     min-height: 70vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -342,6 +343,7 @@ main {
     max-height: 12vh;
     overflow-y: auto;
     margin: 10px 0;
+    
 }
 
 .top {
