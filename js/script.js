@@ -1,12 +1,12 @@
 const projects = [
-    {category:'landing page',name:'fonacria-2026',img:"img/bannerFonacriad.png",description:"landing page para o evento nacional cediado no para pela fasepa",link:"https://fasepa.pa.gov.br/ii-reuniao-tecnica-fonacriad/",
+    {category:'landing page',name:'fonacria-2026',img:"img/bannerFonacriad.png",description:"Landing page institucional criada para divulgar o evento nacional do FONACRIAD. O projeto foi desenvolvido com foco em responsividade, acessibilidade e uma navegação intuitiva, apresentando informações do evento de forma organizada e atrativa.",link:"https://fasepa.pa.gov.br/ii-reuniao-tecnica-fonacriad/",
      tech: [
-    { nome: "HTML", cor: "#E34F26" },
-    { nome: "CSS3", cor: "#A36AFF" },
-    { nome: "JavaScript", cor: "#F7DF1E" }
+    { nome: "WordPress", cor: "blue" },
+   
+    
 ]
   },
-    {category:'landing page',name:'miraterapeutica',img:"img/capaMiraTerapeutica.png",description:"",link:"https://superandoatraicao.com.br/",
+    {category:'landing page',name:'miraterapeutica',img:"img/capaMiraTerapeutica.png",description:"Landing page criada para promover um curso online, oferecendo uma apresentação clara do conteúdo, benefícios e chamada para ação. Desenvolvida com foco em responsividade, desempenho e experiência do usuário.<br>Design de :",link:"https://superandoatraicao.com.br/",
     tech: [
     { nome: "HTML", cor: "#E34F26" },
     { nome: "CSS3", cor: "#A36AFF" },
