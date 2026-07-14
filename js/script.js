@@ -13,7 +13,7 @@ const projects = [
     { nome: "JavaScript", cor: "#F7DF1E" }
 ]
   },
-    {category:'chat bot',name:'Barber Curse',img:"img/capa.png",description:"",link:"",
+    {category:'Landing Page',name:'Barber Curse',img:"img/capa.png",description:"Landing page desenvolvida para divulgação de um curso online, com foco na conversão de visitantes em alunos. O projeto apresenta informações sobre o conteúdo, benefícios, depoimentos e chamada para inscrição, utilizando um design responsivo e navegação intuitiva.",link:"https://tayssabeatriz.github.io/portfolio-page/landingPages/barberCursewebsite/",
      tech: [
     { nome: "HTML", cor: "#E34F26" },
     { nome: "CSS3", cor: "#A36AFF" },
