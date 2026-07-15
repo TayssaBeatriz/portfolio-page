@@ -6,7 +6,7 @@ const projects = [
     
 ]
   },
-    {category:'landing page',name:'miraterapeutica',img:"img/capaMiraTerapeutica.png",description:"Landing page criada para promover um curso online, oferecendo uma apresentação clara do conteúdo, benefícios e chamada para ação. Desenvolvida com foco em responsividade, desempenho e experiência do usuário.<br>Design de :",link:"https://superandoatraicao.com.br/",
+    {category:'landing page',name:'miraterapeutica',img:"img/capaMiraTerapeutica.png",description:"Landing page criada para promover um curso online, oferecendo uma apresentação clara do conteúdo, benefícios e chamada para ação. Desenvolvida com foco em responsividade, desempenho e experiência do usuário.<br>Design de :Romulo Nazareno Correa de Carvalho",link:"https://superandoatraicao.com.br/",
     tech: [
     { nome: "HTML", cor: "#E34F26" },
     { nome: "CSS3", cor: "#A36AFF" },
