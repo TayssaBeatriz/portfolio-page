@@ -1,0 +1,867 @@
+/* VARIÁVEIS*/
+:root {
+    --cor-de-fundo: #F1EBDF;
+    --cor-verde: #787F5C;
+    --cor-dark-green: #3A4634;
+    --cor-font-branco: #fff;
+    --cor-font-verde: #3A4634;
+    --cor-font-ligth-verde: #787F5C;
+    --cor-verde-translucido: #787f5c57;
+    --card-color: #ECE5D8;
+    --cor-destaque: gold;
+    --cor-card-hover: #ECE5D9;
+
+    --font-titulo: "Patrick Hand", cursive;
+    --font-subTitle: 'Cormorant Garamond', serif;
+    --font-txt: 'Lora', serif;
+
+    --font-size-titulo-hero: 66px;
+    --font-size-titulo: 36px;
+    --font-size-subTitulo: 16px;
+    --font-size-texto: 14px;
+    --font-size-icon-section: 30px;
+
+    --box-shadow-suave:
+        0 2px 15px -3px rgba(58, 69, 52, .08),
+        0 4px 6px -2px rgba(58, 69, 52, .08);
+
+    --box-shadow-hover:
+        0 2px 15px -3px rgba(58, 69, 52, .56),
+        0 4px 6px -2px rgba(58, 69, 52, .125);
+
+    --transition: .3s ease;
+}
+
+/*RESET*/
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--cor-de-fundo);
+    font-family: var(--font-txt);
+    line-height: 1.6;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+
+
+
+/* tipografia */
+h1 {
+    font: var(--font-size-titulo-hero) var(--font-titulo);
+}
+
+h2 {
+    font: var(--font-size-titulo) var(--font-titulo);
+    color: var(--cor-font-verde);
+    font-weight: 500;
+}
+
+h3,
+h4 {
+    font-family: var(--font-subTitle);
+    color: var(--cor-font-verde);
+}
+
+p,
+a {
+    font: var(--font-size-texto) var(--font-txt);
+    color: var(--cor-font-ligth-verde);
+    text-decoration: none;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .6em;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+/* seção envelope */
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#convite.show {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#videoInicial{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 1;
+}
+#btn-abrir{
+    background-color: #3A4634;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: 2;
+    
+}
+/* seção: convite */
+#convite{
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+} 
+.containerCenter {
+    text-align: center;
+    display: grid;
+    gap: 2em;
+    padding: 5em 1.5em;
+}
+
+.title-section {
+    display: grid;
+    justify-content: center;
+    margin: 0 10%;
+}
+.section-icon{
+    width: 35%;
+    height: 35%;
+    margin:auto;
+    color: var(--cor-dark-green);
+}
+/* centralização da imagens */
+#localizacao img,
+#programacao img,
+#comfirmar-presenca img {
+    margin: 0 auto;
+}
+
+/* divisor entre seções */
+.divisor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* linha do divisor  */
+.line {
+    width: 50px;
+    height: 1px;
+    background-color: var(--cor-verde);
+}
+
+/* icone do divisor */
+.icone {
+    color: var(--cor-font-ligth-verde);
+    font-size: 14px;
+}
+
+#btnAudio {
+    background-color: var(--cor-dark-green);
+    z-index: 9999;
+    padding: .5em;
+    border-radius: 50px;
+    position: fixed;
+    border: none;
+    bottom: 2%;
+    right: 4%;
+    color: var(--cor-font-branco);
+}
+
+.white-color-font {
+    color: var(--cor-font-branco);
+}
+
+/* seção introdução */
+#introducao {
+    height: 100vh;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--cor-verde);
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    z-index: 1;
+}
+
+#introducao .divisor .line{
+    background-color: var(--cor-font-branco);
+}
+#introducao .divisor .icone{
+    color: var(--cor-destaque);
+
+}
+.video-bg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: .6;
+}
+
+.container-introducao-txt{
+    width: 50%;
+    display: grid;
+    justify-content: center;
+    margin: 0 auto;
+    color: var(--cor-font-branco);
+    z-index: 2;
+
+}
+.container-btn-introducao{
+    width: 100%;
+    display: grid;
+    color: var(--cor-font-branco);
+    position: absolute;
+    bottom: 5%;
+    
+}
+
+.container-btn-introducao .arrow{
+    animation: moverArrow 1.5s ease-in-out infinite;
+    color: var(--cor-font-branco);
+    margin: 0 auto;
+
+}
+
+@keyframes moverArrow {
+    0% {
+        transform: translateY(-5px);
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translateY(-5px);
+    }
+}
+
+#Ecomercial {
+    color: var(--cor-destaque);
+    font-family: var(--font-subTitle);
+    font-size: var(--font-size-titulo);
+}
+
+/* ==================================================
+    CRONÔMETRO
+================================================== */
+#contagem-dias {
+    background-color: var(--cor-verde);
+    color: var(--cor-font-branco);
+}
+#contagem-dias .title-section{
+    margin: 0;
+}
+
+#contagem-dias h2 {
+    color: var(--cor-font-branco);
+}
+
+.container-cronometro {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+}
+
+.reloj {
+    font-size: var(--font-size-titulo);
+    font-family: var(--font-subTitle);
+    width: 42%;
+    padding: 3% 0;
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.137);
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.cronometro-txt {
+    font-size: 16px;
+    color:rgba(255, 255, 255, 0.466);
+    font-family: var(--font-txt);
+    font-weight:300;
+}
+
+/* localização imagem zoom */
+.containerImg {
+    width: 100%;
+    height: 20em;
+    overflow: hidden;
+
+}
+
+.containerImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+}
+
+/* botões padrão */
+#localizacao button,
+.alojamento-item button {
+    background: var(--cor-de-fundo);
+    border: 1px solid var(--cor-dark-green);
+    padding: 2%;
+    border-radius: 5px;
+    color: var(--cor-dark-green);
+    transition: all var(--transition);
+}
+
+/* localização */
+.container-btn-localiza {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#abrirNoMaps #addAoCalendario, svg{
+   width: 16px;
+  height: 16px;
+}
+#location-icon {
+    display: grid;
+    width: max-content;
+    margin: 0 auto;
+    padding: 1em;
+    border-radius: 50px;
+    background-color: #787f5c57;
+    color: var(--cor-dark-green);
+}
+
+#hora-funcionamento {
+    font-size: 11px;
+    color: #787f5c8d;
+    display: flex;
+    justify-content: center;
+}
+
+#hora-funcionamento svg{
+    padding-right: 2%;
+    color: var(--cor-font-ligth-verde);
+}
+
+.container-localizacao {
+    padding: 10% 10% 5%;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.container-map {
+
+    display: grid;
+    gap: 1em;
+}
+
+.container-map img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* ==================================================
+    PROGRAMAÇÃO
+================================================== */
+#programacao img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.programacao-itens {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    gap: 2em;
+    text-align: left;
+}
+
+.item {
+    display: flex;
+    gap: 1em;
+    font-size: 14px;
+}
+
+.container-txt-programacao {
+    order: 3;
+}
+
+.Hora-icon {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 0.7em;
+
+}
+
+.hora {
+    background-color: var(--cor-dark-green);
+    color: var(--cor-font-branco);
+    padding: 0.3em 0.5em;
+    height: max-content;
+    order: 2;
+    border-radius: 5px;
+    font-size: 11px;
+
+}
+
+.icons-programa{
+    display: flex;
+    justify-content: center;
+    width:  2.75rem;
+    height: 2.75rem;
+    padding: .5em;
+    background-color: var(--cor-font-branco);
+    border-radius: 50px;
+    align-items: center;
+    text-align: center;
+    z-index: 3;
+    border: 2px solid var(--cor-verde-translucido);
+}
+
+.linha {
+    position: absolute;
+    left: 7%;
+    width: 1px;
+    height: 100%;
+    background: var(--cor-verde);
+    opacity: 0.3;
+    z-index: -1;
+
+}
+
+/* ==================================================
+ ALOJAMENTO
+================================================== */
+.container-alojamento {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.alojamento-item {
+    background-color: var(--card-color);
+    padding: 5% 10%;
+    border-radius: 5px;
+    box-shadow: var(--box-shadow-suave);
+    text-align: left;
+    display: grid;
+    gap: 0.8em;
+}
+
+.alojamento-item:hover {
+    box-shadow: var(--box-shadow-hover);
+}
+
+.alojamento-item button {
+    width: max-content;
+    display: flex;
+    gap: .6em;
+    padding: 3%;
+}
+.alojamento-item svg {
+width: 16%;
+height: 16%;
+}
+
+/* ==================================================
+PERGUNTAS
+================================================== */
+.container-perguntas {
+    display: grid;
+    gap: 1em;
+}
+
+.card-pergunta {
+    background-color: white;
+    padding: 5% 10%;
+    border-radius: 5px;
+    text-align: left;
+}
+
+
+.pergunta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-pergunta .arrow-card {
+    transition: transform 0.5s ease;
+
+}
+
+.card-pergunta .arrow-card.ativo {
+    transform: rotate(180deg);
+    transition: var(--transition);
+}
+
+.resposta {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    display: grid;
+    gap: 1em;
+    transition: var(--transition);
+}
+
+.card-pergunta.open .resposta {
+    max-height: 200px;
+    opacity: 1;
+    padding: 3% 0;
+
+}
+
+/* ==================================================
+   PRESENTES
+================================================== */
+#presentes .card-pergunta {
+    margin-top: 10%;
+    background-color: var(--cor-de-fundo);
+    box-shadow: var(--box-shadow-suave);
+}
+
+#presentes .card-pergunta:hover {
+    background-color: var(--cor-card-hover);
+}
+
+/* ==================================================
+ FORMULÁRIO
+================================================== */
+form {
+    padding: 10%;
+    border-radius: 5px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    text-align: left;
+}
+
+form button {
+    background-color: var(--cor-dark-green);
+    color: var(--cor-font-branco);
+    padding: 3%;
+    border-radius: 5px;
+    border: none;
+    transition: var(--transition);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"] {
+    width: 100%;
+    padding: 3%;
+    border-radius: 5px;
+    border: 1px solid var(--cor-verde);
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-verde);
+}
+
+.check-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+
+.caixa-de-entrada {
+    display: grid;
+    gap: .5em;
+    text-align: left;
+}
+
+.radiogroup {
+    display: flex;
+    gap: 1em;
+}
+
+.Mensagem {
+    height: 10vh;
+}
+
+.atention {
+    display: flex;
+    gap: 0.4em;
+    font-size: var(--font-size-texto);
+}
+
+
+/* ==================================================
+FOOTER
+================================================== */
+footer {
+    background-color: var(--cor-dark-green);
+    text-align: center;
+    color: var(--cor-font-branco);
+}
+
+footer p {
+    color: var(--cor-font-branco);
+}
+footer svg{
+   width: 1.8em;
+    margin:0 auto;
+}
+
+#footer-title {
+    color: var(--cor-font-branco);
+}
+
+/* RESPONSIVIDADE */
+@media (min-width:768px) and (max-width:1024px) {
+
+    :root {
+        --font-size-titulo-hero: 72px;
+        --font-size-titulo: 36px;
+        --font-size-subTitulo: 24px;
+        --font-size-texto: 16px;
+        --font-size-icon-section: 50px;
+
+    }
+
+
+    .containerCenter {
+        padding: 8rem 3rem;
+    }
+
+    .container-localizacao .container-perguntas {
+        padding: 3rem;
+        margin: 0 5%;
+    }
+
+    .container-btn-localiza {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .programacao-itens {
+        flex-direction: row;
+        gap: .5rem;
+    }
+
+    .item {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: .5em;
+    }
+
+    .Hora-icon {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .hora {
+        padding: 0.4em 0.8em;
+        border-radius: 50px;
+    }
+
+    .linha {
+        width: 90%;
+        height: 1px;
+        top: 25%;
+    }
+
+    .container-txt-programacao p {
+        font-size: 12px;
+    }
+
+    .container-alojamento {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .alojamento-item {
+        padding: 2em;
+        width: 60%;
+    }
+
+    .card-pergunta {
+        padding: 1em;
+    }
+
+    form {
+        width: 36em;
+        margin: 0 auto;
+        padding: 2em;
+    }
+
+
+
+
+}
+
+@media (orientation: landscape) {
+    :root {
+        --font-size-titulo-hero: 75px;
+        --font-size-titulo: 40px;
+        --font-size-subTitulo: 34px;
+        --font-size-texto: 14px;
+    }
+
+    .containerCenter {
+        margin: 0% 4% 0;
+    }
+    #contagem-dias .containerCenter{
+        margin:0 ;
+    }
+
+    .reloj {
+        width: 20%;
+
+    }
+
+    .cronometro-txt {
+        font-size: 25px;
+
+    }
+    .linha{
+        top: 30%;
+    }
+    .item{
+        padding: .8em;
+        cursor: pointer;
+    }
+    .item:hover .icons-programa{
+        border: 2px solid var(--cor-dark-green);
+        transform: scale(1.2);
+        transition: var(--transition);
+
+    }
+    .item:hover .hora{
+        background-color: var(--cor-verde);
+    }
+    #btnAudio{
+        padding: .8em;
+        right: 1%;
+    }
+    #perguntas .containerCenter, #presentes .containerCenter{
+        max-width: 42em;
+        margin: 0 auto;
+    }
+    .card-pergunta{
+        cursor: pointer;
+    }
+    #abrirNoMaps:hover,#addAoCalendario:hover,.alojamento-item button:hover{
+        background-color: var(--cor-dark-green);
+        color: var(--cor-font-branco);
+
+    }
+    form button:hover{
+        background: #3a4634e2;
+    }
+
+}
+@media(min-width:1200px){
+     :root {
+        --font-size-titulo-hero: 85px;
+        --font-size-titulo: 40px;
+        --font-size-subTitulo: 34px;
+        --font-size-texto: 14px;
+    }
+
+    .container-btn-localiza button:hover, .alojamento-item button:hover{
+        background-color: var(--cor-dark-green);
+        color: var(--cor-font-branco);
+
+    }
+    .containerCenter, .container-cronometro{
+        margin: 0 15%;
+    }
+    .reloj{
+        padding:1% 0 ;
+        width: 20%;
+
+    }
+    .container-localizacao{
+        padding: 3em;
+        margin: 5%;
+    }
+   .container-btn-localiza{
+    flex-direction: row;
+    justify-content: center;
+   }
+    .programacao-itens {
+        flex-direction: row;
+        gap: .5rem;
+    }
+
+    .item {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: .5em;
+    }
+
+    .Hora-icon {
+        flex-direction: column;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .hora {
+        padding: 0.4em 0.8em;
+        border-radius: 50px;
+    }
+
+    .linha {
+        width: 90%;
+        height: 1px;
+        top: 35%;
+    }
+
+    .container-txt-programacao p {
+        font-size: 12px;
+    }
+    .container-alojamento {
+        flex-direction: row;
+        justify-content: center;
+        margin: 0 5em;
+    }
+
+    .alojamento-item {
+        padding: 2em;
+        width: 60%;
+    }
+    .card-pergunta {
+        padding: 1em;
+    }
+     form {
+        width: 36em;
+        margin: 0 auto;
+        padding: 2em;
+    }
+    
+
+}

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mar & Jaume</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Lora:ital,wght@0,400..700;1,400..700&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!-- Audio -->
+    <audio id="meuAudio" loop>
+        <source src="img/audio-page.mpeg" type="audio/mpeg">
+    </audio>
+    <!-- Seção inicial: envelope/convite -->
+    <section id="envelope">
+        <button id="btn-abrir"></button>
+        <video id="videoInicial"muted playsinline preload="auto"poster="img/poster_capa.jpg">
+            <source src="img/Video_inicio_envelope.mp4" type="video/mp4">
+        </video>
+
+    </section>
+
+
+    <!-- seção: página principal -->
+    <section id="convite" class="hidden">
+        <section id="introducao">
+
+            <button id="btnAudio">
+               <i data-lucide="volume-1"></i>
+            </button>
+
+            <video autoplay muted loop playsinline class="video-bg">
+                <source src="img/backGround-video.mp4" type="video/mp4">
+                Seu navegador não suporta vídeo.
+            </video>
+
+            <div class="container-introducao-txt motion">
+                <span class="motion">NOS CASAMOS</span>
+                <h1 class="motion">Mar</h1>
+                <span class="motion" id="Ecomercial">&</span>
+                <h1 class="motion">Jaume</h1>
+
+                <div class="divisor  motion">
+                    <span class="line"></span>
+                    <span class="icone">✦</span>
+                    <span class="line"></span>
+                </div>
+
+                <span class="motion"><i>7 de maio de 2027</i></span>
+
+            </div>
+            <a class="container-btn-introducao motion" href="#comfirmar-presenca ">
+                <span>CONFIRME SUA PRESENÇA</span>
+                <i data-lucide="chevron-down" class="arrow"></i>
+            </a>
+
+
+        </section>
+        <main>
+            <!-- seção cronometro -->
+            <section id="contagem-dias">
+                <div class="containerCenter">
+                    <div class="title-section">
+                    <h2 class="motion">Contagem regressiva</h2>
+                    <span class="motion">para o dia mais especial de nossas vidas</span>
+                </div>
+                <div class="container-cronometro motion">
+                    <div class="reloj">
+                        <span id="Dias">00</span>
+                        <span class="cronometro-txt">Dias</span>
+                    </div>
+                    <div class="reloj">
+                        <span id="horas">00</span>
+                        <span class="cronometro-txt">Horas</span>
+                    </div>
+                    <div class="reloj">
+                        <span id="min">00</span>
+                        <span class="cronometro-txt">minutos</span>
+                    </div>
+                    <div class="reloj">
+                        <span id="seg">00</span>
+                        <span class="cronometro-txt">segundos</span>
+                    </div>
+                </div>
+                </div>
+            </section>
+            <!-- seção localização -->
+            <section id="localizacao">
+                <div class="containerCenter">
+                      <div class="title-section">
+                    <img class="motion" src="img/ilustracao_brinde.png" alt="taças em brinde" loading="lazy" width="100"
+                        height="100">
+                    <h2 class="motion">detalhes do dia</h2>
+                    <p class="motion">Tudo o que você precisa saber</p>
+                </div>
+
+                <div class="container-localizacao motion">
+                    <div id="location-icon">
+                       <i data-lucide="map-pin"></i> 
+                    </div>
+
+                    <h3>Localização</h3>
+                    <h4>Finca biniagual</h4>
+                    <div id="hora-funcionamento">
+                        <i data-lucide="clock"></i>  
+                        <p>De 17:00h a 01:00h</p>
+
+                    </div>
+
+                    <!-- MAPA -->
+                    <div class="container-map">
+                        <div class="containerImg">
+                            <img src="img/finca-biniagual-tpK1hn9e.webp" alt="imagem da localidade: finca biniagual"
+                                loading="lazy">
+                        </div>
+                        
+                             <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3071.252020894506!2d2.8750857!3d39.6665451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1297c6dd20027ad5%3A0xe3285239e8d04529!2sBINIAGUAL%20DER%20MALLORQUINER!5e0!3m2!1spt-BR!2sbr!4v1771373645162!5m2!1spt-BR!2sbr"
+                            width="100%" max-height="100vh" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        
+                    </div>
+                    <div class="container-btn-localiza">
+                        <button id="abrirNoMaps">
+                       <i data-lucide="map-pin"></i>  
+                       abrir no Maps
+                    </button>
+                    </a>
+                    <button id="addAoCalendario">
+                       <i data-lucide="calendar"></i> calendário</button>
+                    </div>
+                </div>
+
+                </div>
+
+              
+
+            </section>
+            <div class="divisor">
+                <span class="line"></span>
+                <span class="icone">✦</span>
+                <span class="line"></span>
+            </div>
+            <!-- seção programação -->
+            <section id="programacao">
+                <div class="containerCenter">
+                     <div class="title-section">
+                    <img class="motion" src="img/ilustracao_convidados.png" alt="" loading="lazy" width="100%"
+                        height="auto">
+                    <h2 class="motion">Programa do dia</h2>
+                    <p class="motion">O que preparamos para você</p>
+                </div>
+                <div id="iten-programacao" class="programacao-itens motion">
+                    <div class="linha"></div>
+                    <!-- add via js -->
+                </div>
+                </div>
+            </section>
+            <div class="divisor">
+                <span class="line"></span>
+                <span class="icone">✦</span>
+                <span class="line"></span>
+            </div>
+            <!-- seção alojamento -->
+            <section id="alojamento">
+                <div class="containerCenter">
+                     <div class="title-section">
+                    <i data-lucide="bed" class="section-icon"></i>
+                    <h2 class="motion">Alojamento</h2>
+                    <p class="motion">Recomendações para a sua estadia</p>
+                </div>
+
+                <div class="container-alojamento motion">
+                    <!-- add via js -->
+                </div>
+                </div>
+               
+
+            </section>
+            <div class="divisor">
+                <span class="line"></span>
+                <span class="icone">✦</span>
+                <span class="line"></span>
+            </div>
+            <!-- seção perguntas frequentes -->
+            <section id="perguntas">
+                <div class="containerCenter">
+                    <div class="title-section">
+                    <i data-lucide="circle-question-mark"class="section-icon"></i> 
+                    <h2 class="motion">Perguntas frequentes</h2>
+
+                </div>
+
+                <div class="container-perguntas motion">
+                    <div class="card-pergunta">
+                        <div class="pergunta">
+                            <h3>Posso levar um acompanhante?</h3>
+                            <i data-lucide="chevron-down" class="arrow-card"></i>  
+                        </div>
+                        <div class="resposta">
+                            <p>Cada convite inclui um acompanhante. Por favor, indique isso no formulário com seu nome e
+                                sobrenome. Se houver mais de uma pessoa ou se vocês forem da mesma família, não tem
+                                problema, basta adicionar essa informação no formulário.</p>
+                        </div>
+
+                    </div>
+                    <div class="card-pergunta">
+                        <div class="pergunta">
+                            <h3>Haverá estacionamento disponível?</h3>
+                            <i data-lucide="chevron-down" class="arrow-card"></i>  
+                        </div>
+                        <div class="resposta">
+                            <p>Sim, a propriedade possui amplo estacionamento gratuito.</p>
+                        </div>
+
+                    </div>
+                    <div class="card-pergunta">
+                        <div class="pergunta">
+                            <h3>Qual é o código de vestimenta que devo seguir?</h3>
+                            <i data-lucide="chevron-down" class="arrow-card"></i>  
+                        </div>
+                        <div class="resposta">
+                            <p>Elegante e formal. Evite a cor branca, que é reservada para a noiva.</p>
+                        </div>
+
+                    </div>
+                    <div class="card-pergunta">
+                        <div class="pergunta">
+                            <h3>Posso tirar fotos durante a cerimônia?</h3>
+                            <i data-lucide="chevron-down" class="arrow-card"></i>  
+                        </div>
+                        <div class="resposta">
+                            <p>Preferimos uma cerimônia desconectada. Depois da cerimônia, tirem todas as fotos que
+                                quiserem!</p>
+                        </div>
+
+                    </div>
+                </div>
+                </div>
+                
+
+            </section>
+            <div class="divisor">
+                <span class="line"></span>
+                <span class="icone">✦</span>
+                <span class="line"></span>
+            </div>
+            <!-- seção presentes -->
+            <section id="presentes">
+                <div class="containerCenter">
+                    <div class="title-section">
+                    <h2 class="motion">Presentes</h2>
+                    <p class="motion">Sua presença é muito importante para nós. Se desejar nos presentear, poderá
+                        fazê-lo da
+                        maneira que lhe
+                        for mais conveniente</p>
+
+                </div>
+                <div class="card-pergunta motion">
+                    <div class="pergunta">
+                        <h3>Entrada</h3>
+                        <i data-lucide="chevron-down" class="arrow-card"></i>  
+                    </div>
+                    <div class="resposta">
+                        <p>Se preferir, o presente pode ser em dinheiro.
+                            Se for mais conveniente, você também pode fazer uma transferência bancária.</p>
+                        <a href="" style="text-decoration: underline;">Mostrar IBAN</a>
+                    </div>
+                </div>
+                </div>
+            
+            </section>
+            <div class="divisor">
+                <span class="line"></span>
+                <span class="icone">✦</span>
+                <span class="line"></span>
+            </div>
+            <!-- seção formulário: confirmar presença -->
+            <section id="comfirmar-presenca">
+                <div class="containerCenter">
+                     <img class="motion" src="img/ilustracao_aliancas.png" alt="" loading="lazy" width="200" height="100">
+                <h2 class="motion">confirme sua presença</h2>
+                <p class="motion">Esperamos contar com a sua presença</p>
+                <div class="container-formulario motion">
+                    <!-- add o link do e-mail/formulário -->
+                    <form action="php/index.php" method="POST" >
+                        <div class="caixa-de-entrada">
+                            <label for="nome">Seu nome completo *</label>
+                            <input type="text" name="name" id="nome" placeholder="seu nome" required>
+                        </div>
+                        <div class="caixa-de-entrada">
+                            <label for="email">Seu e-mail</label>
+                            <input type="email" name="email" id="email" placeholder="seu@email.com">
+                        </div>
+                        <div class="caixa-de-check">
+                            <label>vai estar presente ?</label>
+                            <div class="radiogroup">
+                                <div class="check">
+                                    <input type="radio" name="presenca" id="sim" value="sim" checked>
+                                    <label for="yes">eu vou</label>
+
+                                </div>
+                                <div class="check">
+                                    <input type="radio" name="presenca" id="nao" value="não">
+                                    <label for="no">eu não vou</label>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="caixa-de-entrada">
+                            <label for="numConvidados">Número de convidados</label>
+                            <input type="number" name="numConvidados" id="numConvidados" value="1" min="1" max="2">
+                        </div>
+                        <div class="caixa-de-entrada">
+                            <div class="atention">
+                               <i data-lucide="triangle-alert" style="color: gold;"></i>
+                                </p>Alergias e intolerancias alimentares</p>
+                            </div>
+                            <div class="check-container">
+                                <div class="check">
+                                    <input type="checkbox" name="restricoes[]" value="Sem glútem">
+                                    <label>Sem glútem/ Celíaco</label>
+                                </div>
+                                <div class="check">
+                                    <input type="checkbox" name="restricoes[]" value="Vegetariano">
+                                    <label>Vegetariano</label>
+                                </div>
+                                <div class="check">
+                                    <input type="checkbox" name="restricoes[]" value="Alergia a nozes">
+                                    <label>Alergia a nozes</label>
+                                </div>
+                                <div class="check">
+                                    <input type="checkbox" name="restricoes[]" value="Sem lactose">
+                                    <label>Sem lactose</label>
+                                </div>
+                                <div class="check">
+                                    <input type="checkbox" name="restricoes[]" value="Vegano">
+                                    <label>Vegano</label>
+                                </div>
+                                <div class="check">
+                                    <input type="checkbox" name="restricoes[]" value="Frutos do mar">
+                                    <label for="">Alergia a frutos do mar</label>
+                                </div>
+                            </div>
+                            <div class="caixa-de-entrada">
+                                <label for="outrasRestricoes">Outras alergias e restrições</label>
+                                <input type="text" name="outrasRestricoes" id="outrasRestricoes"
+                                    placeholder="ex: Alergia a ovo">
+
+                            </div>
+
+                        </div>
+                        <div class="caixa-de-entrada">
+                            <label for="mensagem">Mensagem para os noivos (opcional)</label>
+                            <input type="text" name="mensagem" id="mensagem" class="Mensagem"
+                                placeholder="Nos escreva uma Mensagem">
+                        </div>
+
+                        <button type="submit">
+                            <i data-lucide="send"></i> 
+                            Enviar confirmação
+                        </button>
+                    </form>
+
+                </div>
+
+
+                </div>
+               
+            </section>
+
+        </main>
+        <footer>
+            <div class="containerCenter">
+                <i data-lucide="heart"></i> 
+            <h2 class="motion" id="footer-title">Mar & Jaume</h2>
+            <p class="motion">7 de maio de 2027</p>
+
+            </div>
+           
+           
+
+        </footer>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

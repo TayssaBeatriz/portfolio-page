@@ -1,0 +1,118 @@
+:root{
+  --cor-de-fundo:#F1EBDF;
+  --cor-verde:#787F5C;
+  --cor-dark-green:#3A4634;
+  --cor-font-branco:#fff;
+  --cor-font-verde:#3A4634;
+  --cor-font-ligth-verde:#787F5C;
+  --cor-verde-translucido:#787f5c57;
+  --card-color:#ECE5D8;
+  --cor-destaque:gold;
+  --cor-card-hover:#ECE5D9;
+
+  --font-titulo:'Edu NSW ACT Cursive', cursive;
+  --font-subTitle:'Cormorant Garamond', serif;
+  --font-txt:'Lora', serif;
+
+  --font-size-titulo-hero:36px;
+  --font-size-titulo:25px;
+  --font-size-subTitulo:18px;
+  --font-size-texto:14px;
+  --font-size-icon-section:30px;
+
+  --box-shadow-suave:
+    0 2px 15px -3px rgba(58,69,52,.08),
+    0 4px 6px -2px rgba(58,69,52,.08);
+
+  --box-shadow-hover:
+    0 2px 15px -3px rgba(58,69,52,.56),
+    0 4px 6px -2px rgba(58,69,52,.125);
+
+  --transition:.3s ease;
+}
+
+/*RESET*/
+*,
+*::before,
+*::after{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  background:var(--cor-de-fundo);
+  font-family:var(--font-txt);
+  line-height:1.6;
+  opacity:0;
+  transition:opacity 1s ease;
+}
+
+
+/* seção envelope */
+#envelope{
+    height: 100vh;
+    width: 100%;
+}
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#convite.show {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#videoInicial{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 1;
+}
+#btn-abrir{
+    background-color: #3A4634;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: 2;
+    
+}
+/* seção: convite */
+#convite{
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+}
+/* centralização da imagens */
+#localizacao img,#programacao img,#comfirmar-presenca img{
+    margin: 0 auto;
+}
+/* divisor entre seções */
+.divisor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+/* linha do divisor  */
+.line{
+  width: 50px;
+  height: 1px;
+  background-color: var(--cor-verde); 
+}
+/* icone do divisor:estrela */
+.icone {
+  color:var(--cor-font-ligth-verde); 
+  font-size: 14px;
+}
+/* seção introdução */
+#introdução{
+    
+}
