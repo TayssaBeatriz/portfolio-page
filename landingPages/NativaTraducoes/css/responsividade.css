@@ -1,0 +1,402 @@
+
+/* ======================================
+      MOBILE — até 450px
+====================================== */
+@media(max-width: 450px){
+
+  :root{
+      --fontSize-Hero: 30px;
+      --font-sizeTitulo: 22px;
+      --font-subTitulo: 16px;
+      --font-sizeTexto: 14px;
+  }
+
+  .text{
+      width: 90%;
+  }
+  .formContainer input{
+      width: 80%;
+      padding: 10px;
+  }
+
+  .carrossel{
+      height: 10vh;
+  }
+
+  .carrossel img{
+      width: 10px;
+  }
+  #idiomas{
+
+  }
+
+  #idiomas h3{
+      font-size:14px;
+      margin-left:9%;
+  }
+  .lista span{
+    font-size: var(--font-sizeTitulo);
+  }
+  .infoContainer li{
+    text-align: center;
+    width: 14%;
+  
+    
+  }
+  input{
+    width: 90%;
+  }
+  .formContainer select{
+    width: 85%;
+  }
+
+}
+
+/* ======================================
+      CELULARES GRANDES — até 540px
+====================================== */
+@media (max-width: 540px){
+
+  :root{
+      --fontSize-Hero: 30px;
+      --font-sizeTitulo: 24px;
+      --font-subTitulo: 18px;
+      --font-sizeTexto: 15px;
+  }
+  .text{
+    width: 100%;
+  }
+  .containerHero{
+    width: 80%;
+    margin: 4% auto;
+  }
+
+  .containerLogo img{
+      width:50%;
+  }
+  .carrossel img{
+    width: 20px;
+  }
+  .botaoFlutuante{
+    bottom: 3%;
+  }
+}
+
+/* ======================================
+      TABLETS — 768px a 1025px
+====================================== */
+@media (min-width: 768px) and (max-width: 1025px){
+
+  :root{
+      --fontSize-Hero: 40px;
+      --font-sizeTitulo: 25px;
+      --font-subTitulo: 20px;
+      --font-sizeTexto: 20px;
+  }
+
+  button{
+      font-size:var(--font-sizeTitulo);
+  }
+   .botaoFlutuante{
+    right: 1%;
+    bottom: 2%;
+  }
+
+  .text{
+      width:80%;
+      margin:0 10% 0 10%;
+      
+  }
+
+  .text span{
+      font-size:var(--fontSize-Hero);
+  }
+  .infoContainer{
+    width: 100%;
+
+  }
+  .formContainer{
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .formContainer input{
+      width:90%;
+  }
+
+  .carrossel{
+      gap:6rem;
+  }
+  .carrossel img{
+   max-width: 100px;
+  }
+
+  .containerCards{
+    margin-left: 7%;
+  }
+
+  .card{
+      width:60%;
+      margin-left:15%;
+  }
+
+  #vantagensDeEntrega h2{
+      margin-top:10%;
+  }
+
+  .containerVantagens{
+      display:block;
+  }
+
+  .lista{
+      width:50%;
+      
+  }
+
+  #idiomas{
+      height:110vh;
+  }
+
+  #idiomas h3{
+      margin-left:7%;
+      font-size: var(--font-sizeTitulo);
+  }
+
+  .containerIdiomas{
+      width:80%;
+  }
+
+
+  .infoContainer ul{
+      margin:0;
+      gap:3rem;
+  }
+
+ .text{
+  width: 90%;
+  margin-left: 5%;
+ }
+
+
+  .infoContainer li{
+      font-size:var(--font-sizeTexto);
+  }
+
+  .containerLogo{
+      margin-left:16%;
+      width: 70%;
+  }
+  .formContainer{
+    width: 90%;
+    margin-left: 5%;
+  }
+
+}
+
+/* ======================================
+      descktop
+====================================== */
+@media (min-width:1024px){
+
+  :root{
+      --fontSize-Hero: 55px;
+      --font-sizeTitulo: 30px;
+      --font-subTitulo: 20px;
+      --font-sizeTexto: 17px;
+  }
+
+  header{
+    display: flex;
+    align-items:center;
+
+  }
+  button{
+    font-size: var(--font-sizeTexto);
+  }
+  .botaoFlutuante{
+    right: 1%;
+    bottom: 2%;
+  }
+  .content{
+      display:flex;
+      width: 100%;
+      margin-left: 3%;
+      gap: 18rem;
+  }
+
+  .content ul{
+      display:flex;
+      gap:2rem;
+      list-style:none;
+      margin-top: 15%;
+  }
+
+  .LogoHeader{
+      width:15vh;
+  }
+
+  .LogoHeader img{
+      width:100%;
+  }
+
+  nav a{
+      color:#ffffff5e;
+      text-align:center;
+  }
+
+  nav a:hover{
+      color:#366ED8;
+  }
+  .containerHero{
+    display: flex;
+    width: 100%;
+    margin: 3%;
+  }
+  .formContainer{
+    border-radius: 20px 0px 0 20px ;
+  }
+  .text{
+    margin: 0;
+  }
+  .infoContainer ul{
+      gap:5rem;
+
+  }
+   .infoContainer{
+    padding: 3%;
+  }
+  .infoContainer li{
+    width: 14%;
+    text-align: center;
+
+  }
+
+  .containerCards{
+      display:flex;
+      gap:.5rem;
+      width:90%;
+      justify-content: center;
+      margin: 5%;
+  }
+
+  .card{
+      max-width:55%;
+      padding:2%;
+      margin: 0;
+  }
+
+  /* FASES LADO A LADO */
+  .containerFase{
+     display: flex;
+      align-items:center;
+      justify-content:center;
+      gap:0rem;
+      width:80%;
+      margin:auto;
+  }
+  .containerVantagens img{
+    max-width: 300px;
+  }
+  .containerVantagens {
+    display: flex;
+  }
+
+  /* Tamanho dos itens */
+  .fases{
+      max-width:100%;
+      text-align:center;
+      overflow: hidden;
+  }
+  .linha-vertical{
+    display: none;
+  }
+  .linha-diagonal{
+    display: flex;
+    margin-bottom: 28%;
+    width:100%;
+  }
+  .MoveTop{
+    margin-bottom: 20%;
+  }
+  .toBottom{
+    transform: rotate(-130deg);
+  }
+  .textContent{
+    width: 100%;
+  }
+
+  #idiomas{
+      height:auto;
+  }
+
+  .idiomas img{
+      max-width:12%;
+  }
+
+  .idiomas h3{
+      font-size:30px;
+  }
+
+  /* Footer ajustado */
+  footer{
+      display:flex;
+      justify-content:center;
+      gap: 0;
+  }
+
+  .containerLogo{
+      width:50%;
+      margin: 5%;
+  }
+
+  .containerLogo img{
+      width:100%;
+  }
+
+  .LinksFooter{
+      width:50%;
+      margin-top: 10%;
+  }
+  .aviso{
+    margin-top: 15%;
+  }
+}
+@media (min-width:1280px){
+     :root{
+      --fontSize-Hero: 70px;
+      --font-sizeTitulo: 50px;
+      --font-subTitulo: 30px;
+      --font-sizeTexto: 20px;
+  }
+  .containerHero{
+    gap: 5rem;
+    width: 90%;
+    margin-left: 5%;
+
+  }
+  .text span{
+    font-size: var(--fontSize-Hero);
+  }
+  .containerVantagens{
+    display: flex;
+    gap: 5rem;
+  }
+  .containerVantagens img{
+    width: 420px;
+  }
+  #idiomas h3{
+    font-size: var(--font-subTitulo);
+  }
+  .infoContainer li{
+    width: 20%;
+  }
+  .content{
+    margin-left: 4%;
+    gap: 27%;
+  }
+ 
+
+
+
+
+}

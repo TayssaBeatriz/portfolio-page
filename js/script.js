@@ -20,6 +20,22 @@ const projects = [
     { nome: "JavaScript", cor: "#F7DF1E" }
 ]
   
+  },
+   {category:'Landing Page',name:'Nativa traduções',img:"",description:"",link:"https://tayssabeatriz.github.io/portfolio-page/landingPages/",
+     tech: [
+    { nome: "HTML", cor: "#E34F26" },
+    { nome: "CSS3", cor: "#A36AFF" },
+    { nome: "JavaScript", cor: "#F7DF1E" }
+]
+  
+  },
+  {category:'Landing Page',name:'Covite de casamento',img:"landingPages/convite/img/poster_capa.jpg",description:"",link:"https://tayssabeatriz.github.io/portfolio-page/landingPages/",
+     tech: [
+    { nome: "HTML", cor: "#E34F26" },
+    { nome: "CSS3", cor: "#A36AFF" },
+    { nome: "JavaScript", cor: "#F7DF1E" }
+]
+  
   }
 
 ]
