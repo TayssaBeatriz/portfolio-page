@@ -21,7 +21,7 @@ const projects = [
 ]
   
   },
-   {category:'Landing Page',name:'Nativa traduções',img:"",description:"",link:"https://tayssabeatriz.github.io/portfolio-page/landingPages/",
+   {category:'Landing Page',name:'Nativa traduções',img:"landingPages/NativaTraducoes/img/capa.png",description:"",link:"https://tayssabeatriz.github.io/portfolio-page/landingPages/NativaTraducoes/",
      tech: [
     { nome: "HTML", cor: "#E34F26" },
     { nome: "CSS3", cor: "#A36AFF" },
@@ -29,7 +29,7 @@ const projects = [
 ]
   
   },
-  {category:'Landing Page',name:'Covite de casamento',img:"landingPages/convite/img/poster_capa.jpg",description:"",link:"https://tayssabeatriz.github.io/portfolio-page/landingPages/",
+  {category:'Landing Page',name:'Covite de casamento',img:"landingPages/convite/img/poster_capa.jpg",description:"Clone da página(https://finca-demo.thedigitalyes.com/)feito originalemente por:The Digital Yes.Este projeto foi desenvolvido com o objetivo de praticar HTML, CSS e JavaScript, reproduzindo o layout e algumas interações da página. Todos os direitos sobre o design e a identidade visual pertencem à empresa original.",link:"https://tayssabeatriz.github.io/portfolio-page/landingPages/convite/",
      tech: [
     { nome: "HTML", cor: "#E34F26" },
     { nome: "CSS3", cor: "#A36AFF" },
@@ -101,6 +101,7 @@ banners.forEach((banner) => {
     banner.addEventListener('click', () => {
 
         const card = banner.closest('.card-project');
+        const description = card.querySelector('.descriptionProj');
         const text = card.querySelector('.margin');
 
         const cardAberto = card.classList.contains('open');
@@ -108,17 +109,24 @@ banners.forEach((banner) => {
         // Fecha todos os cards
         document.querySelectorAll('.card-project').forEach((c) => {
             c.classList.remove('open');
-            c.querySelector('.descriptionProj').style.height = '0';
-            c.querySelector('.margin').style.display = 'none';
-            c.style.gridRow = 'span 1';
+
+            const desc = c.querySelector('.descriptionProj');
+            const margin = c.querySelector('.margin');
+
+            desc.style.height = "0px";
+            margin.style.display = "none";
+
+            c.style.gridRow = "span 1";
         });
 
         // Se o card clicado estava fechado, abre ele
         if (!cardAberto) {
             card.classList.add('open');
-            card.querySelector('.descriptionProj').style.height = 'auto';
-            text.style.display = 'grid';
-            card.style.gridRow = 'span 2';
+            text.style.display = "grid";
+
+            description.style.height = description.scrollHeight + "px";
+
+            card.style.gridRow = "span 2";
         }
 
     });
