@@ -309,7 +309,7 @@ main {
 }
 
 .containerProjects {
-    margin: 10px auto;
+    margin: 30px auto;
     width: 85%;
     min-height: 70vh;
     display: grid;
