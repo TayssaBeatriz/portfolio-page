@@ -21,14 +21,6 @@ const projects = [
 ]
   
   },
-   {category:'Landing Page',name:'Nativa traduções',img:"landingPages/NativaTraducoes/img/capa.png",description:"",link:"https://tayssabeatriz.github.io/portfolio-page/landingPages/NativaTraducoes/",
-     tech: [
-    { nome: "HTML", cor: "#E34F26" },
-    { nome: "CSS3", cor: "#A36AFF" },
-    { nome: "JavaScript", cor: "#F7DF1E" }
-]
-  
-  },
   {category:'Landing Page',name:'Covite de casamento',img:"landingPages/convite/img/poster_capa.jpg",description:"Clone da página(https://finca-demo.thedigitalyes.com/)feito originalemente por:The Digital Yes.Este projeto foi desenvolvido com o objetivo de praticar HTML, CSS e JavaScript, reproduzindo o layout e algumas interações da página. Todos os direitos sobre o design e a identidade visual pertencem à empresa original.",link:"https://tayssabeatriz.github.io/portfolio-page/landingPages/convite/",
      tech: [
     { nome: "HTML", cor: "#E34F26" },
