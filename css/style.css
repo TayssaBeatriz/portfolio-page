@@ -167,12 +167,14 @@ main {
     font-size: var(--title-cracha);
     color: var(--color-wine);
     font-weight: 800;
+    text-align: center;
 
 }
 
 
 .descricao p {
     color: var(--color-wine);
+    text-align: justify;
 }
 
 .name {
@@ -491,9 +493,9 @@ footer ul {
 
 @media (min-width:768px) {
     :root {
-        --title-cracha: 40px;
-        --titulos: 28px;
-        --text: 25px;
+        --title-cracha: 38px;
+        --titulos: 25px;
+        --text: 20px;
     }
 
     main {
@@ -514,9 +516,10 @@ footer ul {
     .card {
         flex-direction: row;
         min-height: max-content;
-    
+        gap: 3rem;
         justify-content: center;
         align-items: center;
+       
 
     }
 
@@ -526,10 +529,13 @@ footer ul {
     }
 
     .cracha-img {
-        width: 100%;
+        width: 30vw;
         height: 30vh;
         margin: 0;
 
+    }
+    .habilidades{
+        justify-content: left;
     }
 
     .habilidades i {
@@ -537,12 +543,18 @@ footer ul {
     }
 
     .descricao {
-        gap: 1.5rem;
+        gap: 1rem;
         width: 50%;
-
         padding: 0;
-
-
+    }
+    h4{
+        margin: 0;
+    }
+    .descricao p{
+         text-align: left;
+    }
+    .descricao h3{
+        text-align: left;
     }
 
     .name img {
@@ -595,7 +607,7 @@ footer ul {
    
     .cracha-img{
         width: 100%;
-        height: 40vh;
+        height: 45vh;
 
     }
    
